@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #808080;
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.profile-section {
+    display: grid;
+    grid-template-columns: 300px 1fr; /* Increased width for left section */
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.name-container {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.name {
+    font-size: 2.rem;
+    font-weight: bold;
+    color: #333;
+    width: 100%;
+    word-wrap: normal;
+    white-space: normal; /* Allow text to wrap normally */
+    line-height: 1.2; /* Adjust line height for better readability */
+}
+
+.About-me {
+    font-size: 18px;
+    font-weight: bold;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.about-text {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.divider {
+    border-top: 1px solid #ddd;
+    margin: 1rem 0;
+}
+
+.skills-section {
+    margin-bottom: 2rem;
+}
+
+.skills-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.skills-list {
+    list-style-type: none;
+}
+
+.skills-list li {
+    margin-bottom: 0.5rem;
+    color: #444;
+}
+
+.main-content {
+    margin-left: 2rem;
+}
+
+.section {
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.section-content {
+    color: #666;
+    margin-bottom: 1.5rem;
+}
+
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.education-table th,
+.education-table td {
+    border: 3px solid #333;
+    padding: 1rem;
+    text-align: left;
+}
+
+.education-table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .profile-section {
+        grid-template-columns: 1fr;
+    }
+    
+    .main-content {
+        margin-left: 0;
+    }
+    
+    .name {
+        font-size: 2rem;
+    }
+}
